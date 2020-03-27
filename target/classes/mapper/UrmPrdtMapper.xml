@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.UrmPrdtDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.UrmPrdt">
+        <result column="PRD_ID" property="prdId" />
+        <result column="PRD_NM" property="prdNm" />
+        <result column="MERC_ID" property="mercId" />
+        <result column="STOE_ID" property="stoeId" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="CARD_TYP" property="cardTyp" />
+        <result column="SIG_DT" property="sigDt" />
+        <result column="SERVICE_CHARGE" property="serviceCharge" />
+        <result column="WAIVE_AMOUNT" property="waiveAmount" />
+        <result column="POS_FLG" property="posFlg" />
+        <result column="TP_FLG" property="tpFlg" />
+        <result column="ACCEPT_FLAG" property="acceptFlag" />
+        <result column="WX_BANK_ACCEPT_APPID" property="wxBankAcceptAppid" />
+        <result column="WX_BANK_APPID" property="wxBankAppid" />
+        <result column="AUTH_PAYDIR" property="authPaydir" />
+        <result column="WX_CATE_GORYID" property="wxCateGoryid" />
+        <result column="SERVICE_PHONE" property="servicePhone" />
+        <result column="WEIXIN_CHANNELID" property="weixinChannelid" />
+        <result column="PAY_CODE_INFO" property="payCodeInfo" />
+        <result column="MAILBOX" property="mailbox" />
+        <result column="BUSINESS_LICENSE_TYPE" property="businessLicenseType" />
+        <result column="MSH_STOE_CNT_NM" property="mshStoeCntNm" />
+        <result column="MSH_STOE_CNT_TEL" property="mshStoeCntTel" />
+        <result column="MSH_STOE_ADDS" property="mshStoeAdds" />
+        <result column="MSH_STL_CRP_NO" property="mshStlCrpNo" />
+        <result column="MSH_BNK_ACNM" property="mshBnkAcnm" />
+        <result column="MSH_STL_OAC" property="mshStlOac" />
+        <result column="MSH_BUS_LIC_NO" property="mshBusLicNo" />
+        <result column="MSH_PROV_COD" property="mshProvCod" />
+        <result column="MSH_CITY_COD" property="mshCityCod" />
+        <result column="MSH_AREA_COD" property="mshAreaCod" />
+        <result column="MSH_ADDRESS_TYPE" property="mshAddressType" />
+        <result column="MSH_STATE" property="mshState" />
+        <result column="MSH_CHNL_STATE" property="mshChnlState" />
+        <result column="CONTACT_TYPE" property="contactType" />
+        <result column="ALIPAY_LOGONID" property="alipayLogonid" />
+        <result column="ALIPAY_BANK_ACCEPT_APPID" property="alipayBankAcceptAppid" />
+        <result column="ALIPAY_CATE_GORYID" property="alipayCateGoryid" />
+        <result column="WX_APPLYID" property="wxApplyid" />
+        <result column="ALIPAY_APPLYID" property="alipayApplyid" />
+        <result column="AC_TIME" property="acTime" />
+        <result column="WX_MSH_APPLYSTATE" property="wxMshApplystate" />
+        <result column="ALIPAY_MSH_APPLYSTATE" property="alipayMshApplystate" />
+        <result column="BANKSPNAME" property="bankspname" />
+        <result column="ALIASNAME" property="aliasname" />
+        <result column="CUR_CORG_NO" property="curCorgNo" />
+        <result column="CHANNEL_DT" property="channelDt" />
+        <result column="WX_FLG" property="wxFlg" />
+        <result column="ALI_FLG" property="aliFlg" />
+        <result column="SDK_FLG" property="sdkFlg" />
+        <result column="ELP_FLG" property="elpFlg" />
+        <result column="ME31_FLG" property="me31Flg" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PRD_ID, PRD_NM, MERC_ID, STOE_ID, TM_SMP, CARD_TYP, SIG_DT, SERVICE_CHARGE, WAIVE_AMOUNT, POS_FLG, TP_FLG, ACCEPT_FLAG, WX_BANK_ACCEPT_APPID, WX_BANK_APPID, AUTH_PAYDIR, WX_CATE_GORYID, SERVICE_PHONE, WEIXIN_CHANNELID, PAY_CODE_INFO, MAILBOX, BUSINESS_LICENSE_TYPE, MSH_STOE_CNT_NM, MSH_STOE_CNT_TEL, MSH_STOE_ADDS, MSH_STL_CRP_NO, MSH_BNK_ACNM, MSH_STL_OAC, MSH_BUS_LIC_NO, MSH_PROV_COD, MSH_CITY_COD, MSH_AREA_COD, MSH_ADDRESS_TYPE, MSH_STATE, MSH_CHNL_STATE, CONTACT_TYPE, ALIPAY_LOGONID, ALIPAY_BANK_ACCEPT_APPID, ALIPAY_CATE_GORYID, WX_APPLYID, ALIPAY_APPLYID, AC_TIME, WX_MSH_APPLYSTATE, ALIPAY_MSH_APPLYSTATE, BANKSPNAME, ALIASNAME, CUR_CORG_NO, CHANNEL_DT, WX_FLG, ALI_FLG, SDK_FLG, ELP_FLG, ME31_FLG
+    </sql>
+
+</mapper>

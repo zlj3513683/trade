@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.ChannelScanSupportDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.ChannelScanSupport">
+        <id column="CHANNEL_SCAN_SUPPORT_ID" property="channelScanSupportId" />
+        <result column="CHN_CODE" property="chnCode" />
+        <result column="WX_SCAN_PAY_SUPPORT" property="wxScanPaySupport" />
+        <result column="ALI_SCAN_PAY_SUPPORT" property="aliScanPaySupport" />
+        <result column="CUP_SCAN_PAY_SUPPORT" property="cupScanPaySupport" />
+        <result column="WX_IN_COME_SUPPORT" property="wxInComeSupport" />
+        <result column="ALI_IN_COME_SUPPORT" property="aliInComeSupport" />
+        <result column="CUP_IN_COME_SUPPORT" property="cupInComeSupport" />
+        <result column="CRE_TIME" property="creTime" />
+        <result column="UPD_TIME" property="updTime" />
+        <result column="MERC_TYPE" property="mercType" />
+        <result column="SUB_SCRIBE_PAY" property="subScribePay" />
+        <result column="QR_CODE_ALI_PAY" property="qrCodeAliPay" />
+        <result column="QR_CODE_WX_PAY" property="qrCodeWxPay" />
+        <result column="QR_CODE_CUP_PAY" property="qrCodeCupPay" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CHANNEL_SCAN_SUPPORT_ID, CHN_CODE, WX_SCAN_PAY_SUPPORT, ALI_SCAN_PAY_SUPPORT, CUP_SCAN_PAY_SUPPORT, WX_IN_COME_SUPPORT, ALI_IN_COME_SUPPORT, CUP_IN_COME_SUPPORT, CRE_TIME, UPD_TIME
+    </sql>
+
+</mapper>

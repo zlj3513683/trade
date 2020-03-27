@@ -1,0 +1,2 @@
+mvn install:install-file -Dfile=newpay-base-1.0.0.jar -DgroupId=com.startpos.newpay.base -DartifactId=newpay-base -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=ojdbc6-11.2.0.4.jar -DgroupId=com.oracle -DartifactId=ojdbc6  -Dversion=11.2.0.4 -Dpackaging=jar

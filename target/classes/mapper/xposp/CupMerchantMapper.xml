@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.CupMerchantDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.CupMerchant">
+        <id column="CUP_ID" property="cupId" />
+        <result column="MERCHANT_ID" property="merchantId" />
+        <result column="STOE_ID" property="stoeId" />
+        <result column="CUP_MERCHANT_ID" property="cupMerchantId" />
+        <result column="EXAMINE_STATUS" property="examineStatus" />
+        <result column="ACTIVATE_STATUS" property="activateStatus" />
+        <result column="EXAMINE_REMARK" property="examineRemark" />
+        <result column="ACTIVATE_REMARK" property="activateRemark" />
+        <result column="WECHAT_PUBLIC_STATUS" property="wechatPublicStatus" />
+        <result column="WECHAT_PAYMENT_CODE_STATUS" property="wechatPaymentCodeStatus" />
+        <result column="WECHAT_SCAN_CODE_STATUS" property="wechatScanCodeStatus" />
+        <result column="ALIPAY_SERVICE_WINDOW_STATUS" property="alipayServiceWindowStatus" />
+        <result column="ALIPAY_PAYMENT_CODE_STATUS" property="alipayPaymentCodeStatus" />
+        <result column="ALIPAY_SCAN_CODE_STATUS" property="alipayScanCodeStatus" />
+        <result column="CUP_PAYMENT_CODE_STATUS" property="cupPaymentCodeStatus" />
+        <result column="CUP_SCAN_CODE_STATUS" property="cupScanCodeStatus" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="CUP_PAY_SECRET_KEY" property="cupPaySecretKey" />
+        <result column="TM_SMP" property="tmSmp" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CUP_ID, MERCHANT_ID, STOE_ID, CUP_MERCHANT_ID, EXAMINE_STATUS, ACTIVATE_STATUS, EXAMINE_REMARK, ACTIVATE_REMARK, WECHAT_PUBLIC_STATUS, WECHAT_PAYMENT_CODE_STATUS, WECHAT_SCAN_CODE_STATUS, ALIPAY_SERVICE_WINDOW_STATUS, ALIPAY_PAYMENT_CODE_STATUS, ALIPAY_SCAN_CODE_STATUS, CUP_PAYMENT_CODE_STATUS, CUP_SCAN_CODE_STATUS, CREATE_TIME, UPDATE_TIME, CUP_PAY_SECRET_KEY, TM_SMP
+    </sql>
+
+</mapper>

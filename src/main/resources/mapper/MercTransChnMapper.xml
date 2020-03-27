@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.MercTransChnDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.MercTransChn">
+        <result column="MERC_ID" property="mercId" />
+        <result column="SCAN_CHN" property="scanChn" />
+        <result column="POS_CHN" property="posChn" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="UPD_TM" property="updTm" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MERC_ID, SCAN_CHN, POS_CHN, TM_SMP, UPD_TM
+    </sql>
+
+</mapper>

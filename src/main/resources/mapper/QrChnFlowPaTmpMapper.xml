@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.QrChnFlowPaTmpDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.QrChnFlowPaTmp">
+        <result column="QR_CHN_FLOW_PA_ID" property="qrChnFlowPaId" />
+        <result column="ORG_NO" property="orgNo" />
+        <result column="MRCH_NO" property="mrchNo" />
+        <result column="MRCH_NAME" property="mrchName" />
+        <result column="CURRENCY" property="currency" />
+        <result column="REMARK" property="remark" />
+        <result column="CRE_TIME" property="creTime" />
+        <result column="UPD_TIME" property="updTime" />
+        <result column="DEVICEIP" property="deviceip" />
+        <result column="PA_MERC_ID" property="paMercId" />
+        <result column="OPRID" property="oprid" />
+        <result column="TRMNL_TYPE" property="trmnlType" />
+        <result column="OUT_TRADE_NO" property="outTradeNo" />
+        <result column="TXNTIME" property="txntime" />
+        <result column="RESP_CODE" property="respCode" />
+        <result column="SYS_TIME" property="sysTime" />
+        <result column="AMOUNT" property="amount" />
+        <result column="TOTAL_AMOUNT" property="totalAmount" />
+        <result column="AUTH_CODE" property="authCode" />
+        <result column="PAY_CHANNEL" property="payChannel" />
+        <result column="GOODS_TAG" property="goodsTag" />
+        <result column="BODYDETAIL" property="bodydetail" />
+        <result column="GOODS_DETAIL" property="goodsDetail" />
+        <result column="ATTACH" property="attach" />
+        <result column="NEED_RECEIPT" property="needReceipt" />
+        <result column="OUT_TRANSACTION_ID" property="outTransactionId" />
+        <result column="SUB_IS_SUBSCRIBE" property="subIsSubscribe" />
+        <result column="SUB_APPID" property="subAppid" />
+        <result column="INVOICE_AMOUNT" property="invoiceAmount" />
+        <result column="TIME_END" property="timeEnd" />
+        <result column="BANK_BILLNO" property="bankBillno" />
+        <result column="SUB_TRANS_TYPE" property="subTransType" />
+        <result column="IS_SUBSCRIBE" property="isSubscribe" />
+        <result column="POINT_AMOUNT" property="pointAmount" />
+        <result column="COUPON_FEE" property="couponFee" />
+        <result column="PROMOTION_DETAIL" property="promotionDetail" />
+        <result column="DISCOUNT_GOODS_DETAIL" property="discountGoodsDetail" />
+        <result column="FUND_BILL_LIST" property="fundBillList" />
+        <result column="RECEIPT_AMOUNT" property="receiptAmount" />
+        <result column="BUYER_PAY_AMOUNT" property="buyerPayAmount" />
+        <result column="BANK_TYPE" property="bankType" />
+        <result column="UUID" property="uuid" />
+        <result column="MDISCOUNT" property="mdiscount" />
+        <result column="UNIONPAY_DISCOUNT" property="unionpayDiscount" />
+        <result column="GMT_PAYMENT" property="gmtPayment" />
+        <result column="BUYER_USER_ID" property="buyerUserId" />
+        <result column="BUYER_LOGON_ID" property="buyerLogonId" />
+        <result column="APPID" property="appid" />
+        <result column="OPENID" property="openid" />
+        <result column="SUB_OPENID" property="subOpenid" />
+        <result column="REFUND_COUNT" property="refundCount" />
+        <result column="REFUND_STATUS" property="refundStatus" />
+        <result column="REFUND_CHANNEL" property="refundChannel" />
+        <result column="REFUND_FEE" property="refundFee" />
+        <result column="COUPON_REFUND_FEE" property="couponRefundFee" />
+        <result column="TXN_CNL" property="txnCnl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        QR_CHN_FLOW_PA_ID, ORG_NO, MRCH_NO, MRCH_NAME, CURRENCY, REMARK, CRE_TIME, UPD_TIME, DEVICEIP, PA_MERC_ID, OPRID, TRMNL_TYPE, OUT_TRADE_NO, TXNTIME, RESP_CODE, SYS_TIME, AMOUNT, TOTAL_AMOUNT, AUTH_CODE, PAY_CHANNEL, GOODS_TAG, BODYDETAIL, GOODS_DETAIL, ATTACH, NEED_RECEIPT, OUT_TRANSACTION_ID, SUB_IS_SUBSCRIBE, SUB_APPID, INVOICE_AMOUNT, TIME_END, BANK_BILLNO, SUB_TRANS_TYPE, IS_SUBSCRIBE, POINT_AMOUNT, COUPON_FEE, PROMOTION_DETAIL, DISCOUNT_GOODS_DETAIL, FUND_BILL_LIST, RECEIPT_AMOUNT, BUYER_PAY_AMOUNT, BANK_TYPE, UUID, MDISCOUNT, UNIONPAY_DISCOUNT, GMT_PAYMENT, BUYER_USER_ID, BUYER_LOGON_ID, APPID, OPENID, SUB_OPENID, REFUND_COUNT, REFUND_STATUS, REFUND_CHANNEL, REFUND_FEE, COUPON_REFUND_FEE, TXN_CNL
+    </sql>
+
+</mapper>

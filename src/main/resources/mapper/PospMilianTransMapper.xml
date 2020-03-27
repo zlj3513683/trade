@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newland.dao.PospMilianTransDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.newland.model.entity.PospMilianTrans">
+        <id column="ORDER_ID" property="orderId" />
+        <result column="REQ_URI" property="reqUri" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="REQ_XML" property="reqXml" />
+        <result column="NOTIFY_XML" property="notifyXml" />
+        <result column="NOTIFY_TIME" property="notifyTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ORDER_ID, REQ_URI, CREATE_TIME, REQ_XML, NOTIFY_XML, NOTIFY_TIME
+    </sql>
+
+</mapper>

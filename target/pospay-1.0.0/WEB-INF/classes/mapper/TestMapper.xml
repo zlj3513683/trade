@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.TestDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.Test">
+        <id column="ID)" property="id" />
+        <result column="MERCHANT_ID" property="merchantId" />
+        <result column="ORGANIZATION_ID" property="organizationId" />
+        <result column="MERCHANT_NAME" property="merchantName" />
+        <result column="MERCHANT_SHORT_NAME" property="merchantShortName" />
+        <result column="MERCHANT_TYPE" property="merchantType" />
+        <result column="INDUSTRY_CATEGORY" property="industryCategory" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MERCHANT_ID, ORGANIZATION_ID, MERCHANT_NAME, MERCHANT_SHORT_NAME, MERCHANT_TYPE, INDUSTRY_CATEGORY, ID
+    </sql>
+<!--    <insert id="insertAll"  parameterType="java.util.List">-->
+<!--&lt;!&ndash;        <selectKey keyProperty="id" resultType="java.lang.Long" order="BEFORE">&ndash;&gt;-->
+<!--&lt;!&ndash;        select TEST_SEQUENCE.nextval as id from dual&ndash;&gt;-->
+<!--&lt;!&ndash;        </selectKey>&ndash;&gt;-->
+<!--        INSERT INTO T_TEST (ID,MERCHANT_ID,MERCHANT_NAME,MERCHANT_SHORT_NAME,MERCHANT_TYPE,ORGANIZATION_ID,INDUSTRY_CATEGORY)-->
+<!--        SELECT  TEST_SEQUENCE.nextval,t.*-->
+<!--        FROM (-->
+<!--        <foreach collection="tests" item="item" separator="UNION ALL">-->
+<!--            select-->
+<!--            #{item.merchantId,jdbcType=BIGINT} as merchantId,-->
+<!--            #{item.merchantName,jdbcType=VARCHAR} as merchantName,-->
+<!--            #{item.merchantShortName,jdbcType=VARCHAR} as merchantShortName,-->
+<!--            #{item.merchantType,jdbcType=VARCHAR} as merchantType,-->
+<!--            #{item.organizationId,jdbcType=BIGINT} as organizationId,-->
+<!--            #{item.industryCategory,jdbcType=VARCHAR} as industryCategory-->
+<!--            from dual-->
+<!--        </foreach>-->
+<!--        ) t-->
+<!--    </insert>-->
+
+    <insert id="insertAll"  parameterType="java.util.List">
+        <!--        <selectKey keyProperty="id" resultType="java.lang.Long" order="BEFORE">-->
+        <!--        select TEST_SEQUENCE.nextval as id from dual-->
+        <!--        </selectKey>-->
+        <foreach collection="tests" item="item" separator=";">
+            INSERT INTO T_TEST (ID),MERCHANT_ID,MERCHANT_NAME,MERCHANT_SHORT_NAME,MERCHANT_TYPE,ORGANIZATION_ID,INDUSTRY_CATEGORY)
+            values
+            (TEST_SEQUENCE.nextval),
+            #{item.merchantId,jdbcType=BIGINT},
+            #{item.merchantName,jdbcType=VARCHAR},
+            #{item.merchantShortName,jdbcType=VARCHAR},
+            #{item.merchantType,jdbcType=VARCHAR},
+            #{item.organizationId,jdbcType=BIGINT},
+            #{item.industryCategory,jdbcType=VARCHAR}
+
+        </foreach>
+    </insert>
+
+</mapper>

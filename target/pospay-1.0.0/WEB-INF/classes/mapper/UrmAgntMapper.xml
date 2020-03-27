@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.UrmAgntDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.UrmAgnt">
+        <result column="AGT_MERC_ID" property="agtMercId" />
+        <result column="USR_NO" property="usrNo" />
+        <result column="AC_NO" property="acNo" />
+        <result column="AC_TYP" property="acTyp" />
+        <result column="AGT_MERC_PROV" property="agtMercProv" />
+        <result column="AGT_MERC_CITY" property="agtMercCity" />
+        <result column="AGT_MERC_CITY_NM" property="agtMercCityNm" />
+        <result column="ORG_NO" property="orgNo" />
+        <result column="AGT_MERC_NM" property="agtMercNm" />
+        <result column="MERC_TYP" property="mercTyp" />
+        <result column="MERC_CNM" property="mercCnm" />
+        <result column="MERC_ABBR" property="mercAbbr" />
+        <result column="MERC_ENM" property="mercEnm" />
+        <result column="REG_ORG_NM" property="regOrgNm" />
+        <result column="AGT_MERC_ATTR" property="agtMercAttr" />
+        <result column="TAX_REG_NO" property="taxRegNo" />
+        <result column="REG_ID" property="regId" />
+        <result column="ORG_COD" property="orgCod" />
+        <result column="REG_ADDR" property="regAddr" />
+        <result column="CRP_NM" property="crpNm" />
+        <result column="CRP_ID_TYP" property="crpIdTyp" />
+        <result column="CRP_ID_NO" property="crpIdNo" />
+        <result column="REG_CAP_AMT" property="regCapAmt" />
+        <result column="MGT_SECT" property="mgtSect" />
+        <result column="MGT_RGN" property="mgtRgn" />
+        <result column="BUS_ADDR" property="busAddr" />
+        <result column="BUS_ZIP" property="busZip" />
+        <result column="FAX" property="fax" />
+        <result column="STAF_NUM" property="stafNum" />
+        <result column="MERC_CHK_ADDR" property="mercChkAddr" />
+        <result column="MERC_CHK_ZIP" property="mercChkZip" />
+        <result column="MERC_CHK_COMM" property="mercChkComm" />
+        <result column="MERC_CHK_EMAIL" property="mercChkEmail" />
+        <result column="MERC_CHK_FAX" property="mercChkFax" />
+        <result column="AGT_MERC_LVL" property="agtMercLvl" />
+        <result column="CRE_REF_NO" property="creRefNo" />
+        <result column="EFF_DT" property="effDt" />
+        <result column="EXP_DT" property="expDt" />
+        <result column="CUS_MGR" property="cusMgr" />
+        <result column="CUS_MGR_NM" property="cusMgrNm" />
+        <result column="UP_AGT_MERC_ID" property="upAgtMercId" />
+        <result column="AGT_MERC_STS" property="agtMercSts" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="AGT_BOND_AMT" property="agtBondAmt" />
+        <result column="FES_FEQ" property="fesFeq" />
+        <result column="AGT_UPD_OPER" property="agtUpdOper" />
+        <result column="AGN_APPR_RMK" property="agnApprRmk" />
+        <result column="AGN_RVW_OPR" property="agnRvwOpr" />
+        <result column="AGN_RVW_DT" property="agnRvwDt" />
+        <result column="AGT_STS" property="agtSts" />
+        <result column="AGT_REC_CD" property="agtRecCd" />
+        <result column="SCR_CHANGE_FLG" property="scrChangeFlg" />
+        <result column="ZIP_FIL_PATH" property="zipFilPath" />
+        <result column="MOBILE_PHONE" property="mobilePhone" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        AGT_MERC_ID, USR_NO, AC_NO, AC_TYP, AGT_MERC_PROV, AGT_MERC_CITY, AGT_MERC_CITY_NM, ORG_NO, AGT_MERC_NM, MERC_TYP, MERC_CNM, MERC_ABBR, MERC_ENM, REG_ORG_NM, AGT_MERC_ATTR, TAX_REG_NO, REG_ID, ORG_COD, REG_ADDR, CRP_NM, CRP_ID_TYP, CRP_ID_NO, REG_CAP_AMT, MGT_SECT, MGT_RGN, BUS_ADDR, BUS_ZIP, FAX, STAF_NUM, MERC_CHK_ADDR, MERC_CHK_ZIP, MERC_CHK_COMM, MERC_CHK_EMAIL, MERC_CHK_FAX, AGT_MERC_LVL, CRE_REF_NO, EFF_DT, EXP_DT, CUS_MGR, CUS_MGR_NM, UP_AGT_MERC_ID, AGT_MERC_STS, TM_SMP, AGT_BOND_AMT, FES_FEQ, AGT_UPD_OPER, AGN_APPR_RMK, AGN_RVW_OPR, AGN_RVW_DT, AGT_STS, AGT_REC_CD, SCR_CHANGE_FLG, ZIP_FIL_PATH, MOBILE_PHONE
+    </sql>
+
+</mapper>

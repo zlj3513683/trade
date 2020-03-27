@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.UrmMstlDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.UrmMstl">
+        <result column="MERC_ID" property="mercId" />
+        <result column="STOE_ID" property="stoeId" />
+        <result column="PRD_ID" property="prdId" />
+        <result column="PAS_STL_FLG" property="pasStlFlg" />
+        <result column="STL_SIGN" property="stlSign" />
+        <result column="STL_TYP" property="stlTyp" />
+        <result column="STL_OAC" property="stlOac" />
+        <result column="STL_OAC_CLS" property="stlOacCls" />
+        <result column="BNK_ACNM" property="bnkAcnm" />
+        <result column="STL_CRP_NO" property="stlCrpNo" />
+        <result column="CRP_END_DT" property="crpEndDt" />
+        <result column="WC_LBNK_NO" property="wcLbnkNo" />
+        <result column="OPN_BNK_PROV" property="opnBnkProv" />
+        <result column="OPN_BNK_CITY" property="opnBnkCity" />
+        <result column="OPN_BNK_DESC" property="opnBnkDesc" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="MET_IMG" property="metImg" />
+        <result column="HOLD_IMG" property="holdImg" />
+        <result column="OPN_BNK_SUB" property="opnBnkSub" />
+        <result column="MERC_BANKCODE_IMG" property="mercBankcodeImg" />
+        <result column="MERC_OPENBANK_IMG" property="mercOpenbankImg" />
+        <result column="STL_TYP2" property="stlTyp2" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MERC_ID, STOE_ID, PRD_ID, PAS_STL_FLG, STL_SIGN, STL_TYP, STL_OAC, STL_OAC_CLS, BNK_ACNM, STL_CRP_NO, CRP_END_DT, WC_LBNK_NO, OPN_BNK_PROV, OPN_BNK_CITY, OPN_BNK_DESC, TM_SMP, MET_IMG, HOLD_IMG, OPN_BNK_SUB, MERC_BANKCODE_IMG, MERC_OPENBANK_IMG, STL_TYP2
+    </sql>
+
+</mapper>

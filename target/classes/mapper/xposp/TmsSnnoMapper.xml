@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.TmsSnnoDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.TmsSnno">
+        <result column="AC_DT" property="acDt" />
+        <result column="SN_NO" property="snNo" />
+        <result column="TRM_KEY" property="trmKey" />
+        <result column="TRM_TEK" property="trmTek" />
+        <result column="MAC_KEY" property="macKey" />
+        <result column="PIN_KEY" property="pinKey" />
+        <result column="SN_STS" property="snSts" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="TEK" property="tek" />
+        <result column="TEK_STS" property="tekSts" />
+        <result column="TEK_SIGN" property="tekSign" />
+        <result column="TEK2" property="tek2" />
+        <result column="TYING_NUM" property="tyingNum" />
+        <result column="EQM_TYPE" property="eqmType" />
+        <result column="BIND_STS" property="bindSts" />
+        <result column="CODE_URL" property="codeUrl" />
+        <result column="CODE_PATH" property="codePath" />
+        <result column="DOWN_DT" property="downDt" />
+        <result column="USR_NAME" property="usrName" />
+        <result column="BAT_NO" property="batNo" />
+        <result column="YLQRCODE" property="ylqrcode" />
+        <result column="YLQRSTATUS" property="ylqrstatus" />
+        <result column="YLBINDCODE" property="ylbindcode" />
+        <result column="SN_NOCODE" property="snNocode" />
+        <result column="BUS_TYP" property="busTyp" />
+        <result column="BUS_TYP_NAME" property="busTypName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        AC_DT, SN_NO, TRM_KEY, TRM_TEK, MAC_KEY, PIN_KEY, SN_STS, TM_SMP, TEK, TEK_STS, TEK_SIGN, TEK2, TYING_NUM, EQM_TYPE, BIND_STS, CODE_URL, CODE_PATH, DOWN_DT, USR_NAME, BAT_NO, YLQRCODE, YLQRSTATUS, YLBINDCODE, SN_NOCODE, BUS_TYP, BUS_TYP_NAME
+    </sql>
+
+</mapper>

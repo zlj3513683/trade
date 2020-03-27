@@ -1,0 +1,75 @@
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: oracle.jdbc.OracleDriver
+        druid:
+            url: jdbc:oracle:thin:@192.168.70.206:1521:testdb
+            username: c##inte
+            password: inte123
+            initial-size: 10
+            max-active: 250
+            min-idle: 200
+            max-wait: 60000
+            pool-prepared-statements: true
+            max-pool-prepared-statement-per-connection-size: 20
+            time-between-eviction-runs-millis: 90000
+            min-evictable-idle-time-millis: 900000
+            validation-query: SELECT 1 FROM DUAL
+            test-while-idle: true
+            test-on-borrow: false
+            test-on-return: false
+            stat-view-servlet:
+                enabled: true
+                url-pattern: /druid/*
+                #login-username: admin
+                #login-password: admin
+            filter:
+                stat:
+                    log-slow-sql: true
+                    slow-sql-millis: 500
+                    merge-sql: false
+                wall:
+                    config:
+                        multi-statement-allow: true
+            keep-alive: true
+            max-open-prepared-statements: 100
+sysproperty:
+    esignature:
+        path: /usr/tomcat/software/esignature
+    starpos:
+        tpdu: 6006010000
+hsm:
+    ip: 47.101.135.5
+    port: 8481
+    zmk: 88CEBAA26E1B48FDAD2BED00218F8239
+gt:
+    starpos:
+        addressA: 101.227.81.6:7878
+        addressB: 101.227.81.6:7878
+    mrchtrmnl:
+        corgNo: GTXYPOS
+        corgMercId: GTXYPOS
+        corgTrmNo: GTXYPOS
+        trmnlNo: 12345678
+        mrchNo: 123456781234567
+        zmk: 950973182317F80BA30FE2C1D07BCC11
+    prdId: 1001
+cup:
+    url: https://qra.95516.com/pay/gateway
+    mercId: QRA392158130FFL
+    key: 8838fe9bc1d5e8d7123ea8304a34f4dc
+pingan:
+    paymentUrl: https://brappay.pingan.com.cn/pay/gateway
+#    notifyUrl: https://pay.wisdomsaas.com/notice/cup/native
+idGen:
+    centerId: 2
+    workId: 2
+    baffle: true
+    isTest: true
+    orgNo: 530530041352
+    mercId: 530560041866
+    hMackey: a4cc3a25f0cf4fe16098ff3f0dd8c1f9
+
+#���������������:idGen.centerId ���������id, ididGen.workId������������id,������������32
+
+

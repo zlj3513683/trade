@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.CmmInfDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.CmmInf">
+        <result column="CORG_NO" property="corgNo" />
+        <result column="CORG_MERC_ID" property="corgMercId" />
+        <result column="CORG_TRM_NO" property="corgTrmNo" />
+        <result column="CORG_MERC_NM" property="corgMercNm" />
+        <result column="CORG_BAT_NO" property="corgBatNo" />
+        <result column="CORG_TRM_KEY" property="corgTrmKey" />
+        <result column="CORG_PIN_KEY" property="corgPinKey" />
+        <result column="CORG_MAC_KEY" property="corgMacKey" />
+        <result column="CORG_SIG_DT" property="corgSigDt" />
+        <result column="CORG_TRM_CNT" property="corgTrmCnt" />
+        <result column="RMK" property="rmk" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="CORG_MASTER_KEY" property="corgMasterKey" />
+        <result column="CORG_PROV_CD" property="corgProvCd" />
+        <result column="MAX_FLG" property="maxFlg" />
+        <result column="SEND_NUM" property="sendNum" />
+        <result column="CORG_KEY" property="corgKey" />
+        <result column="CORG_SIG_STS" property="corgSigSts" />
+        <result column="USE_FLG" property="useFlg" />
+        <result column="CORG_TRM_SN" property="corgTrmSn" />
+        <result column="CITY_CD" property="cityCd" />
+        <result column="PROV_CD" property="provCd" />
+        <result column="DLY_MAX_AMT" property="dlyMaxAmt" />
+        <result column="CORG_TRACK_KEY" property="corgTrackKey" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CORG_NO, CORG_MERC_ID, CORG_TRM_NO, CORG_MERC_NM, CORG_BAT_NO, CORG_TRM_KEY, CORG_PIN_KEY, CORG_MAC_KEY, CORG_SIG_DT, CORG_TRM_CNT, RMK, TM_SMP, CORG_MASTER_KEY, CORG_PROV_CD, MAX_FLG, SEND_NUM, CORG_KEY, CORG_SIG_STS, USE_FLG, CORG_TRM_SN, CITY_CD, PROV_CD, DLY_MAX_AMT, CORG_TRACK_KEY
+    </sql>
+
+</mapper>

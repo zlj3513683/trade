@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.UrmTprdDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.UrmTprd">
+        <result column="STOE_ID" property="stoeId" />
+        <result column="MERC_ID" property="mercId" />
+        <result column="PRD_ID" property="prdId" />
+        <result column="TRM_NO" property="trmNo" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="EQM_TYPE" property="eqmType" />
+        <result column="BANK_TRM_NO" property="bankTrmNo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        STOE_ID, MERC_ID, PRD_ID, TRM_NO, TM_SMP, EQM_TYPE, BANK_TRM_NO
+    </sql>
+
+</mapper>

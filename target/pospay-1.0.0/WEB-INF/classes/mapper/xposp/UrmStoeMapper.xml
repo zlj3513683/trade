@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.UrmStoeDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.UrmStoe">
+        <result column="STOE_ID" property="stoeId" />
+        <result column="MERC_ID" property="mercId" />
+        <result column="USR_NO" property="usrNo" />
+        <result column="STOE_NM" property="stoeNm" />
+        <result column="STOE_PROV" property="stoeProv" />
+        <result column="STOE_CITY" property="stoeCity" />
+        <result column="STOE_ADDS" property="stoeAdds" />
+        <result column="STOE_CNT_NM" property="stoeCntNm" />
+        <result column="STOE_CNT_TEL" property="stoeCntTel" />
+        <result column="MCC_CD" property="mccCd" />
+        <result column="BUS_STR_TIME" property="busStrTime" />
+        <result column="BUS_END_TIME" property="busEndTime" />
+        <result column="SIG_ORG_NO" property="sigOrgNo" />
+        <result column="OWN_ORG_NO" property="ownOrgNo" />
+        <result column="EFF_DT" property="effDt" />
+        <result column="EXP_DT" property="expDt" />
+        <result column="CUS_MGR_NM" property="cusMgrNm" />
+        <result column="MAIL_ZIP" property="mailZip" />
+        <result column="BENF_TYP" property="benfTyp" />
+        <result column="DOOR_IMG" property="doorImg" />
+        <result column="FOY_IMG" property="foyImg" />
+        <result column="CHOC_IMG" property="chocImg" />
+        <result column="AC_FLG" property="acFlg" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="AGT_MERC_ID" property="agtMercId" />
+        <result column="FOY_IMG2" property="foyImg2" />
+        <result column="SUP_MCC_CD" property="supMccCd" />
+        <result column="MCC_TYP" property="mccTyp" />
+        <result column="STOE_AREA_COD" property="stoeAreaCod" />
+        <result column="SYN_STS" property="synSts" />
+        <result column="SYN_BATCH" property="synBatch" />
+        <result column="SITE_REG_COD" property="siteRegCod" />
+        <result column="STOE_CNM" property="stoeCnm" />
+        <result column="SUPT_DBFREE_FLG" property="suptDbfreeFlg" />
+        <result column="NO_PSWD_LIMIT" property="noPswdLimit" />
+        <result column="NO_SIGN_LIMIT" property="noSignLimit" />
+        <result column="SER_FEE_TYP" property="serFeeTyp" />
+        <result column="SYN_UPD_STS" property="synUpdSts" />
+        <result column="TRM_LIMIT_NUM" property="trmLimitNum" />
+        <result column="RETGOOD_STS" property="retgoodSts" />
+        <result column="MERC498_FAIL_REASON" property="merc498FailReason" />
+        <result column="MERC498_STATS" property="merc498Stats" />
+        <result column="DX_CHANNEL" property="dxChannel" />
+        <result column="SHJR_CHANNEL" property="shjrChannel" />
+        <result column="WZH_CHANNEL" property="wzhChannel" />
+        <result column="WZH_WXCHANNEL_ID" property="wzhWxchannelId" />
+        <result column="WZH_PUBNUM_STATS" property="wzhPubnumStats" />
+        <result column="WZH_RECOM_STATS" property="wzhRecomStats" />
+        <result column="SCAN_STOE_CNM" property="scanStoeCnm" />
+        <result column="WX_APPID" property="wxAppid" />
+        <result column="WX_APPSECRECT" property="wxAppsecrect" />
+        <result column="WX_PAY_CATALOG" property="wxPayCatalog" />
+        <result column="RECOM_WX_APPID" property="recomWxAppid" />
+        <result column="WZH_RECOM_STATS2" property="wzhRecomStats2" />
+        <result column="WZH_CHANNEL_ALI" property="wzhChannelAli" />
+        <result column="STOE_STS" property="stoeSts" />
+        <result column="STOE_STS_TMP" property="stoeStsTmp" />
+        <result column="MERC_ADDSTATS" property="mercAddstats" />
+        <result column="PBANK_MERCID" property="pbankMercid" />
+        <result column="WX_ADDSTSTS" property="wxAddststs" />
+        <result column="APLI_ADDSTSTS" property="apliAddststs" />
+        <result column="PBANK_STOEID" property="pbankStoeid" />
+        <result column="OPENID_ADDSTSTS" property="openidAddststs" />
+        <result column="PBANK_ERRORMESS" property="pbankErrormess" />
+        <result column="WZH_AGENT_NO" property="wzhAgentNo" />
+        <result column="WZH_CHANNEL_ERROR_DES" property="wzhChannelErrorDes" />
+        <result column="PANK_APLI_ID" property="pankApliId" />
+        <result column="PANK_WX_ID" property="pankWxId" />
+        <result column="PANK_APPLYID_RELASTATS" property="pankApplyidRelastats" />
+        <result column="PANK_APPLYID_RECOMSTATS" property="pankApplyidRecomstats" />
+        <result column="PANK_APPLYID_RELA" property="pankApplyidRela" />
+        <result column="PANK_APPLYID_RECOM" property="pankApplyidRecom" />
+        <result column="PANK_PAY_CATALOG" property="pankPayCatalog" />
+        <result column="PANK_PAY_CATALOGSTATS" property="pankPayCatalogstats" />
+        <result column="OPEN_ACCOUNT_STATS" property="openAccountStats" />
+        <result column="PANK_APPLYSECRECT_REAL" property="pankApplysecrectReal" />
+        <result column="STOE_CDT" property="stoeCdt" />
+        <result column="CUSTOMER_CALL" property="customerCall" />
+        <result column="ENGLISH_NM" property="englishNm" />
+        <result column="WX_INF" property="wxInf" />
+        <result column="CHANNEL_NO" property="channelNo" />
+        <result column="RECOM_POS_APPID" property="recomPosAppid" />
+        <result column="RECOM_POS_APPSECRECT" property="recomPosAppsecrect" />
+        <result column="SMPRO_APPID" property="smproAppid" />
+        <result column="SMPRO_APPSECRECT" property="smproAppsecrect" />
+        <result column="SMPRO_STATS" property="smproStats" />
+        <result column="RECOM_APPID" property="recomAppid" />
+        <result column="RECOM_APPSECRECT" property="recomAppsecrect" />
+        <result column="RECOM_PUB_STATS" property="recomPubStats" />
+        <result column="RECOM_POS_STATS" property="recomPosStats" />
+        <result column="WX_LZH_INF" property="wxLzhInf" />
+        <result column="WX_LZH_STS" property="wxLzhSts" />
+        <result column="CHANNEL_NO_LZH" property="channelNoLzh" />
+        <result column="MB_OPEN_STS" property="mbOpenSts" />
+        <result column="MB_STL_MOD" property="mbStlMod" />
+        <result column="PUB_WX_INF" property="pubWxInf" />
+        <result column="DAT_TYP" property="datTyp" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        STOE_ID, MERC_ID, USR_NO, STOE_NM, STOE_PROV, STOE_CITY, STOE_ADDS, STOE_CNT_NM, STOE_CNT_TEL, MCC_CD, BUS_STR_TIME, BUS_END_TIME, SIG_ORG_NO, OWN_ORG_NO, EFF_DT, EXP_DT, CUS_MGR_NM, MAIL_ZIP, BENF_TYP, DOOR_IMG, FOY_IMG, CHOC_IMG, AC_FLG, TM_SMP, AGT_MERC_ID, FOY_IMG2, SUP_MCC_CD, MCC_TYP, STOE_AREA_COD, SYN_STS, SYN_BATCH, SITE_REG_COD, STOE_CNM, SUPT_DBFREE_FLG, NO_PSWD_LIMIT, NO_SIGN_LIMIT, SER_FEE_TYP, SYN_UPD_STS, TRM_LIMIT_NUM, RETGOOD_STS, MERC498_FAIL_REASON, MERC498_STATS, DX_CHANNEL, SHJR_CHANNEL, WZH_CHANNEL, WZH_WXCHANNEL_ID, WZH_PUBNUM_STATS, WZH_RECOM_STATS, SCAN_STOE_CNM, WX_APPID, WX_APPSECRECT, WX_PAY_CATALOG, RECOM_WX_APPID, WZH_RECOM_STATS2, WZH_CHANNEL_ALI, STOE_STS, STOE_STS_TMP, MERC_ADDSTATS, PBANK_MERCID, WX_ADDSTSTS, APLI_ADDSTSTS, PBANK_STOEID, OPENID_ADDSTSTS, PBANK_ERRORMESS, WZH_AGENT_NO, WZH_CHANNEL_ERROR_DES, PANK_APLI_ID, PANK_WX_ID, PANK_APPLYID_RELASTATS, PANK_APPLYID_RECOMSTATS, PANK_APPLYID_RELA, PANK_APPLYID_RECOM, PANK_PAY_CATALOG, PANK_PAY_CATALOGSTATS, OPEN_ACCOUNT_STATS, PANK_APPLYSECRECT_REAL, STOE_CDT, CUSTOMER_CALL, ENGLISH_NM, WX_INF, CHANNEL_NO, RECOM_POS_APPID, RECOM_POS_APPSECRECT, SMPRO_APPID, SMPRO_APPSECRECT, SMPRO_STATS, RECOM_APPID, RECOM_APPSECRECT, RECOM_PUB_STATS, RECOM_POS_STATS, WX_LZH_INF, WX_LZH_STS, CHANNEL_NO_LZH, MB_OPEN_STS, MB_STL_MOD, PUB_WX_INF, DAT_TYP
+    </sql>
+
+</mapper>

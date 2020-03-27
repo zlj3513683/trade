@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="120 seconds" debug="true">
+	<property name="basedir" value="../logs" /><!-- 基本日志路径 -->
+	<property name="appname" value="pospay" /><!-- 应用和序名称 -->
+	<property name="charset" value="utf-8"/><!-- 应用编码 -->
+
+	<!-- 控制台输出 -->
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+			<charset>${charset}</charset>
+		</encoder>
+	</appender>
+	<!-- 时间滚动输出 level为 DEBUG 日志 -->
+	<appender name="file—debug"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${basedir}/${appname}-debug.log</File>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${basedir}/${appname}-debug.%d{yyyy-MM-dd-HH}.gz</FileNamePattern>
+<!--			<timeBasedFileNamingAndTriggeringPolicy-->
+<!--				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
+<!--				<maxFileSize>20MB</maxFileSize>-->
+<!--			</timeBasedFileNamingAndTriggeringPolicy>-->
+<!--			<MaxHistory>30</MaxHistory>-->
+		</rollingPolicy>
+		<encoder>
+			<pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+			<charset>${charset}</charset>
+		</encoder>
+	</appender>
+	<appender name="file—info"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY </onMismatch>
+		</filter>
+		<File>${basedir}/${appname}-info.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${basedir}/${appname}-info.%d{yyyy-MM-dd-HH}.gz</FileNamePattern>
+<!--			<timeBasedFileNamingAndTriggeringPolicy-->
+<!--				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
+<!--				<maxFileSize>20MB</maxFileSize>-->
+<!--			</timeBasedFileNamingAndTriggeringPolicy>-->
+<!--			<MaxHistory>30</MaxHistory>-->
+		</rollingPolicy>
+		<encoder>
+			<pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+			<charset>${charset}</charset>
+		</encoder>
+	</appender>
+	<!-- 时间滚动输出 level为 ERROR 日志 -->
+	<appender name="file—error"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY </onMismatch>
+		</filter>
+		<File>${basedir}/${appname}-error.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${basedir}/${appname}-error.%d{yyyy-MM-dd-HH}.gz</FileNamePattern>
+<!--			<timeBasedFileNamingAndTriggeringPolicy-->
+<!--				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
+<!--				<maxFileSize>20MB</maxFileSize>-->
+<!--			</timeBasedFileNamingAndTriggeringPolicy>-->
+<!--			<MaxHistory>30</MaxHistory>-->
+		</rollingPolicy>
+		<encoder>
+			<pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+			<charset>${charset}</charset>
+		</encoder>
+	</appender>
+
+	<logger name="org.springframework">
+		<level value="error" />
+	</logger>
+	<logger name="com.posppay.newpay">
+		<level value="debug" />
+	</logger>
+<!--	<logger name="com.posppay.newpay.modules.xposp.dao.mapper">-->
+<!--		<level value="debug" />-->
+<!--	</logger>-->
+	<logger name="org.apache.http">
+		<level value="debug" />
+	</logger>
+	<root level="info">
+		<appender-ref ref="stdout" />
+		<appender-ref ref="file—debug" />
+		<appender-ref ref="file—error" />
+		<appender-ref ref="file—info" />
+	</root>
+</configuration>

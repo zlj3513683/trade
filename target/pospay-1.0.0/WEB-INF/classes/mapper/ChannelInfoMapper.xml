@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.ChannelInfoDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.ChannelInfo">
+        <id column="CHN_ID" property="chnId" />
+        <result column="CHN_NAME" property="chnName" />
+        <result column="CHN_CODE" property="chnCode" />
+        <result column="POS_PAY" property="posPay" />
+        <result column="SCAN_PAY" property="scanPay" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="UPD_TM" property="updTm" />
+        <result column="ALI_FEE" property="aliFee" />
+        <result column="WX_FEE" property="wxFee" />
+        <result column="YL_COMMON_CREDICT_FEE" property="ylCommonCredictFee" />
+        <result column="YL_MICRO_CREDICT_FEE" property="ylMicroCredictFee" />
+        <result column="YL_MICRO_BANK_FEE" property="ylMicroBankFee" />
+        <result column="YL_COMMON_BANK_FEE" property="ylCommonBankFee" />
+        <result column="ALI_JS_FEE" property="aliJsFee" />
+        <result column="WX_TP_FEE" property="wxTpFee" />
+        <result column="YL_QR_COMMON_BANK_FEE_MAX" property="ylQrCommonBankFeeMax" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CHN_ID, CHN_NAME, CHN_CODE, POS_PAY, SCAN_PAY, TM_SMP, UPD_TM, ALI_FEE, WX_FEE, YL_COMMON_CREDICT_FEE, YL_MICRO_CREDICT_FEE, YL_MICRO_BANK_FEE, YL_COMMON_BANK_FEE, ALI_JS_FEE, WX_TP_FEE
+    </sql>
+
+</mapper>

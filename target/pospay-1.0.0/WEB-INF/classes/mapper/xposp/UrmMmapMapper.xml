@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.UrmMmapDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.UrmMmap">
+        <result column="STOE_ID" property="stoeId" />
+        <result column="PRD_ID" property="prdId" />
+        <result column="CORG_MERC_ID" property="corgMercId" />
+        <result column="CORG_TRM_NO" property="corgTrmNo" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="MERC_ID" property="mercId" />
+        <result column="MSHALI_MERC_ID" property="mshaliMercId" />
+        <result column="MSHWX_MERC_ID" property="mshwxMercId" />
+        <result column="MSHALI_STATE" property="mshaliState" />
+        <result column="MSHWX_STATE" property="mshwxState" />
+        <result column="MSH_SUCC_TM" property="mshSuccTm" />
+        <result column="OPEN_ACCOUNT_STATS" property="openAccountStats" />
+        <result column="YL_MERC" property="ylMerc" />
+        <result column="VOU_STATS" property="vouStats" />
+        <result column="STAR_KEY" property="starKey" />
+        <result column="STAR_STORE_ID" property="starStoreId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        STOE_ID, PRD_ID, CORG_MERC_ID, CORG_TRM_NO, TM_SMP, MERC_ID, MSHALI_MERC_ID, MSHWX_MERC_ID, MSHALI_STATE, MSHWX_STATE, MSH_SUCC_TM, OPEN_ACCOUNT_STATS, YL_MERC, VOU_STATS, STAR_KEY, STAR_STORE_ID
+    </sql>
+
+</mapper>

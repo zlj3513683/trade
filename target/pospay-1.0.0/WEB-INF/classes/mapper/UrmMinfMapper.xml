@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.UrmMinfDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.UrmMinf">
+        <result column="MERC_ID" property="mercId" />
+        <result column="MERC_NM" property="mercNm" />
+        <result column="MERC_CNM" property="mercCnm" />
+        <result column="MERC_STS" property="mercSts" />
+        <result column="MERC_PROV" property="mercProv" />
+        <result column="MERC_CITY" property="mercCity" />
+        <result column="MERC_ADDS" property="mercAdds" />
+        <result column="USR_NO" property="usrNo" />
+        <result column="TAX_REG_NO" property="taxRegNo" />
+        <result column="ORG_COD" property="orgCod" />
+        <result column="BUS_LIC_NO" property="busLicNo" />
+        <result column="MGT_SCP" property="mgtScp" />
+        <result column="MCC_SUB_CD" property="mccSubCd" />
+        <result column="BUS_LIC_IMG" property="busLicImg" />
+        <result column="CRP_NM" property="crpNm" />
+        <result column="CRP_ID_TYP" property="crpIdTyp" />
+        <result column="CRP_ID_NO" property="crpIdNo" />
+        <result column="CRP_PHONE" property="crpPhone" />
+        <result column="CRP_CS_IMG" property="crpCsImg" />
+        <result column="CRP_OS_IMG" property="crpOsImg" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="SIG_DT" property="sigDt" />
+        <result column="ADD_OPER" property="addOper" />
+        <result column="UPD_OPER" property="updOper" />
+        <result column="UPD_TM" property="updTm" />
+        <result column="MERC_AREA_COD" property="mercAreaCod" />
+        <result column="BUS_EXP_DT" property="busExpDt" />
+        <result column="CRP_EXP_DT" property="crpExpDt" />
+        <result column="MER_RES_IMG" property="merResImg" />
+        <result column="CHK_CRE_RAT" property="chkCreRat" />
+        <result column="BUSINE_RST" property="busineRst" />
+        <result column="THR_ELE_STS" property="thrEleSts" />
+        <result column="IS_CRP_MERC" property="isCrpMerc" />
+        <result column="IN_OCC_ATTR" property="inOccAttr" />
+        <result column="AUTO_CHK_FLAG" property="autoChkFlag" />
+        <result column="MERC_OWN_ORG" property="mercOwnOrg" />
+        <result column="REVIEW_PASS_DT" property="reviewPassDt" />
+        <result column="ADD_REVIEW_OPER" property="addReviewOper" />
+        <result column="UPD_REVIEW_OPER" property="updReviewOper" />
+        <result column="TWO_ELE_STS" property="twoEleSts" />
+        <result column="MERC_OGCC_IMG" property="mercOgccImg" />
+        <result column="MERC_CHANNEL" property="mercChannel" />
+        <result column="CONTRACT_NO" property="contractNo" />
+        <result column="KEY" property="key" />
+        <result column="REVIEW_PASS_FIRSTM" property="reviewPassFirstm" />
+        <result column="MER_CON1_IMG" property="merCon1Img" />
+        <result column="MER_CON2_IMG" property="merCon2Img" />
+        <result column="MER_CON3_IMG" property="merCon3Img" />
+        <result column="MER_CON4_IMG" property="merCon4Img" />
+        <result column="INT_COD" property="intCod" />
+        <result column="MERC498_STATS" property="merc498Stats" />
+        <result column="BAT_PIC_FLG" property="batPicFlg" />
+        <result column="MERC_STS_TMP" property="mercStsTmp" />
+        <result column="MERC_ADDSTATS" property="mercAddstats" />
+        <result column="PBANK_MERCID" property="pbankMercid" />
+        <result column="PBANK_ERRORMESS" property="pbankErrormess" />
+        <result column="MERC_TYPE" property="mercType" />
+        <result column="SIG_PANK_CODE" property="sigPankCode" />
+        <result column="SPECIAL_FLG" property="specialFlg" />
+        <result column="INCOM_TYPE" property="incomType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MERC_ID, MERC_NM, MERC_CNM, MERC_STS, MERC_PROV, MERC_CITY, MERC_ADDS, USR_NO, TAX_REG_NO, ORG_COD, BUS_LIC_NO, MGT_SCP, MCC_SUB_CD, BUS_LIC_IMG, CRP_NM, CRP_ID_TYP, CRP_ID_NO, CRP_PHONE, CRP_CS_IMG, CRP_OS_IMG, TM_SMP, SIG_DT, ADD_OPER, UPD_OPER, UPD_TM, MERC_AREA_COD, BUS_EXP_DT, CRP_EXP_DT, MER_RES_IMG, CHK_CRE_RAT, BUSINE_RST, THR_ELE_STS, IS_CRP_MERC, IN_OCC_ATTR, AUTO_CHK_FLAG, MERC_OWN_ORG, REVIEW_PASS_DT, ADD_REVIEW_OPER, UPD_REVIEW_OPER, TWO_ELE_STS, MERC_OGCC_IMG, MERC_CHANNEL, CONTRACT_NO, KEY, REVIEW_PASS_FIRSTM, MER_CON1_IMG, MER_CON2_IMG, MER_CON3_IMG, MER_CON4_IMG, INT_COD, MERC498_STATS, BAT_PIC_FLG, MERC_STS_TMP, MERC_ADDSTATS, PBANK_MERCID, PBANK_ERRORMESS, MERC_TYPE, SIG_PANK_CODE, SPECIAL_FLG, INCOM_TYPE
+    </sql>
+
+</mapper>

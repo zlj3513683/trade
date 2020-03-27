@@ -1,0 +1,77 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.posppay.newpay.config.StarPosProperty",
+      "name": "gt",
+      "type": "com.posppay.newpay.config.StarPosProperty"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.HsmProperties",
+      "name": "hsm",
+      "type": "com.posppay.newpay.config.HsmProperties"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.XpospSysProperty",
+      "name": "sysproperty",
+      "type": "com.posppay.newpay.config.XpospSysProperty"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.posppay.newpay.config.StarPosProperty",
+      "name": "gt.addresss",
+      "type": "java.util.List<com.posppay.newpay.modules.xposp.router.channel.IpAndPort>"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.StarPosProperty",
+      "name": "gt.mrch-and-trmnl",
+      "type": "com.posppay.newpay.modules.xposp.router.channel.MrchAndTrmnl"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.StarPosProperty",
+      "name": "gt.mrchtrmnl",
+      "type": "java.util.Map<java.lang.String,java.lang.String>"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.StarPosProperty",
+      "name": "gt.starpos",
+      "type": "java.util.Map<java.lang.String,java.lang.String>"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.HsmProperties",
+      "name": "hsm.ip",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.HsmProperties",
+      "name": "hsm.port",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.HsmProperties",
+      "name": "hsm.zmk",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.XpospSysProperty",
+      "name": "sysproperty.e-s-i-g-n-a-t-u-r-e-p-a-t-h",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.XpospSysProperty",
+      "name": "sysproperty.esignature",
+      "type": "java.util.Map<java.lang.String,java.lang.String>"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.XpospSysProperty",
+      "name": "sysproperty.s-t-a-r-p-o-s-t-p-d-u",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.posppay.newpay.config.XpospSysProperty",
+      "name": "sysproperty.starpos",
+      "type": "java.util.Map<java.lang.String,java.lang.String>"
+    }
+  ]
+}

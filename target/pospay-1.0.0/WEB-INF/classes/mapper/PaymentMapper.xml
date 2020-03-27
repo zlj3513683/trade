@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.PaymentDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.Payment">
+        <id column="PAY_ID" property="payId" />
+        <result column="ORG_NO" property="orgNo" />
+        <result column="CHN_CODE" property="chnCode" />
+        <result column="PAY_NO" property="payNo" />
+        <result column="ORD_NO" property="ordNo" />
+        <result column="MRCH_NO" property="mrchNo" />
+        <result column="MRCH_NAME" property="mrchName" />
+        <result column="CURRENCY" property="currency" />
+        <result column="TRANS_AMOUNT" property="transAmount" />
+        <result column="TRANS_TYPE" property="transType" />
+        <result column="TRANS_STATUS" property="transStatus" />
+        <result column="TRANS_CODE" property="transCode" />
+        <result column="TRANS_MSG" property="transMsg" />
+        <result column="ORIGIN_PAYNO" property="originPayno" />
+        <result column="REMARK" property="remark" />
+        <result column="CRE_TIME" property="creTime" />
+        <result column="UPD_TIME" property="updTime" />
+        <result column="SUB_TRANS_TYPE" property="subTransType" />
+        <result column="CHN_ORD_NO" property="chnOrdNo" />
+        <result column="STORE_NO" property="storeNo" />
+        <result column="STORE_NAME" property="storeName" />
+        <result column="TRANS_TIME" property="transTime" />
+        <result column="MRCH_RATES" property="mrchRates" />
+        <result column="MRCH_RATES_AMOUNT" property="mrchRatesAmount" />
+        <result column="DEV_SN" property="devSn" />
+        <result column="OUT_ORDER_NO" property="outOrderNo" />
+        <result column="OUT_TRANSACTION_ID" property="outTransactionId" />
+        <result column="IP_ADDRESS" property="ipAndAddress" />
+        <result column="OUT_BODY" property="outBody" />
+        <result column="ORG_FEE" property="orgFee" />
+        <result column="CHN_FEE" property="chnFee" />
+        <result column="ORG_FEE_AMT" property="orgFeeAmt" />
+        <result column="CHN_FEE_AMT" property="chnFeeAmt" />
+        <result column="BANK_TYPE" property="bankType" />
+        <result column="ATTACH" property="attach" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PAY_ID, ORG_NO, CHN_CODE, PAY_NO, ORD_NO, MRCH_NO, MRCH_NAME, CURRENCY, TRANS_AMOUNT, TRANS_TYPE, TRANS_STATUS, TRANS_CODE, TRANS_MSG, ORIGIN_PAYNO, REMARK, CRE_TIME, UPD_TIME, SUP_TRANS_TYPE, CHN_ORD_NO, STORE_NO, STORE_NAME, TRANS_TIME, MRCH_RATES, MRCH_RATES_AMOUNT, DEV_SN, OUT_ORDER_NO
+    </sql>
+
+</mapper>

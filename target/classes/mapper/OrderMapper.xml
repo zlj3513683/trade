@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.OrderDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.Order">
+        <id column="ORD_ID" property="ordId" />
+        <result column="ORD_NO" property="ordNo" />
+        <result column="ORD_DESC" property="ordDesc" />
+        <result column="ORD_AMT" property="ordAmt" />
+        <result column="MRCH_NO" property="mrchNo" />
+        <result column="MRCH_NAME" property="mrchName" />
+
+        <result column="ORD_STATUS" property="ordStatus" />
+        <result column="CURRENCY" property="currency" />
+        <result column="CHN_CODE" property="chnCode" />
+        <result column="REMARK" property="remark" />
+        <result column="CRE_TIME" property="creTime" />
+        <result column="UPD_TIME" property="updTime" />
+        <result column="STORE_NO" property="storeNo" />
+        <result column="STORE_NAME" property="storeName" />
+        <result column="REFUND_BALANCE" property="refundBalance" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ORD_ID, ORD_NO, ORD_DESC, ORD_AMT, MRCH_NO, MRCH_NAME, CARD_NO, ORD_STATUS, CURRENCY, CHN_CODE, REMARK, CRE_TIME, UPD_TIME, STORE_NO, STORE_NAME, REFUND_BALANCE, COMPLETE_PAY_NO
+    </sql>
+
+</mapper>

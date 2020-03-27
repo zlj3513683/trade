@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.UrmAgtfeeDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.UrmAgtfee">
+        <result column="AGT_MERC_ID" property="agtMercId" />
+        <result column="MERC_ID" property="mercId" />
+        <result column="CAP_TYP" property="capTyp" />
+        <result column="TX_MOD" property="txMod" />
+        <result column="FEE_TYP" property="feeTyp" />
+        <result column="MCC_CD" property="mccCd" />
+        <result column="CRD_IND" property="crdInd" />
+        <result column="EFF_DT" property="effDt" />
+        <result column="EXP_DT" property="expDt" />
+        <result column="FEE_DRT_FLG" property="feeDrtFlg" />
+        <result column="FEE_PERD_UNIT" property="feePerdUnit" />
+        <result column="FEE_PERD_NUM" property="feePerdNum" />
+        <result column="NEXT_FEE_DT" property="nextFeeDt" />
+        <result column="MERC_FEE_MOD" property="mercFeeMod" />
+        <result column="FEE_CAL_MTH" property="feeCalMth" />
+        <result column="FEE_CCY" property="feeCcy" />
+        <result column="BEG_AMT" property="begAmt" />
+        <result column="MIN_FEE_AMT" property="minFeeAmt" />
+        <result column="MAX_FEE_AMT" property="maxFeeAmt" />
+        <result column="FEE_CAL_BAS_FLG" property="feeCalBasFlg" />
+        <result column="FEE_LVL_FLG" property="feeLvlFlg" />
+        <result column="FEE_LVL_BAS_FLG" property="feeLvlBasFlg" />
+        <result column="UP_REF1" property="upRef1" />
+        <result column="FIX_FEE_AMT1" property="fixFeeAmt1" />
+        <result column="FEE_RAT1" property="feeRat1" />
+        <result column="UP_REF2" property="upRef2" />
+        <result column="FIX_FEE_AMT2" property="fixFeeAmt2" />
+        <result column="FEE_RAT2" property="feeRat2" />
+        <result column="UP_REF3" property="upRef3" />
+        <result column="FIX_FEE_AMT3" property="fixFeeAmt3" />
+        <result column="FEE_RAT3" property="feeRat3" />
+        <result column="UP_REF4" property="upRef4" />
+        <result column="FIX_FEE_AMT4" property="fixFeeAmt4" />
+        <result column="FEE_RAT4" property="feeRat4" />
+        <result column="UP_REF5" property="upRef5" />
+        <result column="FIX_FEE_AMT5" property="fixFeeAmt5" />
+        <result column="FEE_RAT5" property="feeRat5" />
+        <result column="UPD_JRN" property="updJrn" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="FEE_WX" property="feeWx" />
+        <result column="FEE_ALI" property="feeAli" />
+        <result column="FEE_UNION_LOAN_FAVOUR" property="feeUnionLoanFavour" />
+        <result column="FEE_UNION_LOAN_NORMAL" property="feeUnionLoanNormal" />
+        <result column="FEE_UNION_BORROW_NORMAL" property="feeUnionBorrowNormal" />
+        <result column="FEE_UNION_BORROW_FAVOUR" property="feeUnionBorrowFavour" />
+        <result column="FEE_UNION_BORROW_NORMAL_MAX" property="feeUnionBorrowFavour" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        AGT_MERC_ID, MERC_ID, CAP_TYP, TX_MOD, FEE_TYP, MCC_CD, CRD_IND, EFF_DT, EXP_DT, FEE_DRT_FLG, FEE_PERD_UNIT, FEE_PERD_NUM, NEXT_FEE_DT, MERC_FEE_MOD, FEE_CAL_MTH, FEE_CCY, BEG_AMT, MIN_FEE_AMT, MAX_FEE_AMT, FEE_CAL_BAS_FLG, FEE_LVL_FLG, FEE_LVL_BAS_FLG, UP_REF1, FIX_FEE_AMT1, FEE_RAT1, UP_REF2, FIX_FEE_AMT2, FEE_RAT2, UP_REF3, FIX_FEE_AMT3, FEE_RAT3, UP_REF4, FIX_FEE_AMT4, FEE_RAT4, UP_REF5, FIX_FEE_AMT5, FEE_RAT5, UPD_JRN, TM_SMP, FEE_WX, FEE_ALI, FEE_UNION_LOAN_FAVOUR, FEE_UNION_LOAN_NORMAL, FEE_UNION_BORROW_NORMAL, FEE_UNION_BORROW_FAVOUR
+    </sql>
+
+</mapper>

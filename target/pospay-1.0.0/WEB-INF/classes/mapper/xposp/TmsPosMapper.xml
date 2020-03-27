@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.TmsPosDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.TmsPos">
+        <result column="STOE_ID" property="stoeId" />
+        <result column="MERC_ID" property="mercId" />
+        <result column="TRM_NO" property="trmNo" />
+        <result column="SN_NO" property="snNo" />
+        <result column="TRM_STS" property="trmSts" />
+        <result column="SGN_STS" property="sgnSts" />
+        <result column="PM_DW_FLG" property="pmDwFlg" />
+        <result column="EMV_DW_FLG" property="emvDwFlg" />
+        <result column="RARD_CD" property="rardCd" />
+        <result column="BAT_NO" property="batNo" />
+        <result column="SIG_DT" property="sigDt" />
+        <result column="BAT_CHK_FLG" property="batChkFlg" />
+        <result column="POS_KEY" property="posKey" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="TRM_TEK" property="trmTek" />
+        <result column="TRM_ZMK" property="trmZmk" />
+        <result column="BIND_STS" property="bindSts" />
+        <result column="SN_NO1" property="snNo1" />
+        <result column="OWN_ORG_NO" property="ownOrgNo" />
+        <result column="TMK_CK_VALUE" property="tmkCkValue" />
+        <result column="CSN_NO" property="csnNo" />
+        <result column="TYING_NUM" property="tyingNum" />
+        <result column="EQM_TYPE" property="eqmType" />
+        <result column="SUPT_DBFREE_FLG" property="suptDbfreeFlg" />
+        <result column="NO_PSWD_LIMIT" property="noPswdLimit" />
+        <result column="NO_SIGN_LIMIT" property="noSignLimit" />
+        <result column="BIND_DT" property="bindDt" />
+        <result column="SN_NO2" property="snNo2" />
+        <result column="MONEY_MORE_FLG" property="moneyMoreFlg" />
+        <result column="SERVICE_CHARGE_MODE" property="serviceChargeMode" />
+        <result column="SERVICE_REMARKS" property="serviceRemarks" />
+        <result column="BIN_FLG" property="binFlg" />
+        <result column="EQMT_TYPE" property="eqmtType" />
+        <result column="XNTRM_NUM" property="xntrmNum" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        STOE_ID, MERC_ID, TRM_NO, SN_NO, TRM_STS, SGN_STS, PM_DW_FLG, EMV_DW_FLG, RARD_CD, BAT_NO, SIG_DT, BAT_CHK_FLG, POS_KEY, TM_SMP, TRM_TEK, TRM_ZMK, BIND_STS, SN_NO1, OWN_ORG_NO, TMK_CK_VALUE, CSN_NO, TYING_NUM, EQM_TYPE, SUPT_DBFREE_FLG, NO_PSWD_LIMIT, NO_SIGN_LIMIT, BIND_DT, SN_NO2, MONEY_MORE_FLG, SERVICE_CHARGE_MODE, SERVICE_REMARKS, BIN_FLG, EQMT_TYPE, XNTRM_NUM
+    </sql>
+
+</mapper>

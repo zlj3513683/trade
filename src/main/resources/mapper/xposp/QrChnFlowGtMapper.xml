@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.QrChnFlowGtDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.QrChnFlowGt">
+        <id column="QR_CHN_FLOW_GT_ID" property="qrChnFlowGtId" />
+        <result column="MERC_ID_GT" property="mercIdGt" />
+        <result column="MERC_ID" property="mercId" />
+        <result column="STOE_NAME" property="stoeName" />
+        <result column="MERC_NAME" property="mercName" />
+        <result column="TRMNL_NO_GT" property="trmnlNoGt" />
+        <result column="TRMNL_NO" property="trmnlNo" />
+        <result column="REQUEST_ID" property="requestId" />
+        <result column="TEL_NO" property="telNo" />
+        <result column="IP_ADDRESS" property="ipAddress" />
+        <result column="CHARACTER_SET" property="characterSet" />
+        <result column="STOE_NO" property="stoeNo" />
+        <result column="OPR_ID" property="oprId" />
+        <result column="SCAN_TYPE" property="scanType" />
+        <result column="PAY_CHANNEL" property="payChannel" />
+        <result column="SCAN_VERSION" property="scanVersion" />
+        <result column="ORDER_ID" property="orderId" />
+        <result column="SERV_ORDER_NO" property="servOrderNo" />
+        <result column="AMOUNT" property="amount" />
+        <result column="BATCH_NO" property="batchNo" />
+        <result column="TXN_CNL" property="txnCnl" />
+        <result column="PAY_TIME" property="payTime" />
+        <result column="GT_ORDER_NO" property="gtOrderNo" />
+        <result column="PAY_TYPE" property="payType" />
+        <result column="QR_CODE" property="qrCode" />
+        <result column="SN" property="sn" />
+        <result column="CHN_CODE" property="chnCode" />
+        <result column="APP_ID" property="appId" />
+        <result column="APP_KEY" property="appKey" />
+        <result column="ORG_NO" property="orgNo" />
+        <result column="CODE" property="code" />
+        <result column="SUBJECT" property="subject" />
+        <result column="SEL_ORDER_NO" property="selOrderNo" />
+        <result column="GOODS_TAG" property="goodsTag" />
+        <result column="BALANCE" property="balance" />
+        <result column="ATTACH" property="attach" />
+        <result column="TXN_APP_ID" property="txnAppId" />
+        <result column="PREPAY_ID" property="prepayId" />
+        <result column="API_APP_ID" property="apiAppId" />
+        <result column="API_TIMESTAMP" property="apiTimestamp" />
+        <result column="API_PACKAGE" property="apiPackage" />
+        <result column="CRE_TIME" property="creTime" />
+        <result column="UPD_TIME" property="updTime" />
+        <result column="OPEN_ID" property="openId" />
+        <result column="OPEN_ID" property="openId" />
+        <result column="RESP_CODE" property="respCode" />
+        <result column="RESP_MSG" property="respMsg" />
+        <result column="PAY_NO" property="payNo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        QR_CHN_FLOW_GT_ID, MERC_ID_GT, MERC_ID, STOE_NAME, MERC_NAME, TRMNL_NO_GT, TRMNL_NO, REQUEST_ID, TEL_NO, IP_ADDRESS, CHARACTER_SET, STOE_NO, OPR_ID, SCAN_TYPE, PAY_CHANNEL, SCAN_VERSION, ORDER_ID, SERV_ORDER_NO, AMOUNT, BATCH_NO, TXN_CNL, PAY_TIME, GT_ORDER_NO, PAY_TYPE, QR_CODE, SN, CHN_CODE, APP_ID, APP_KEY, ORG_NO, CODE, SUBJECT, SEL_ORDER_NO, GOODS_TAG, BALANCE, ATTACH, TXN_APP_ID, PREPAY_ID, API_APP_ID, API_TIMESTAMP, API_PACKAGE, CRE_TIME, UPD_TIME, OPEN_ID
+    </sql>
+
+</mapper>

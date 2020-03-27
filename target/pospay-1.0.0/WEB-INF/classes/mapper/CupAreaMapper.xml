@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.CupAreaDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.CupArea">
+        <id column="CUP_AREA_ID" property="cupAreaId" />
+        <result column="CUP_AREA_NAME" property="cupAreaName" />
+        <result column="CUP_AREA_PARENT_ID" property="cupAreaParentId" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="STARPOS_CODE" property="starposCode" />
+        <result column="PINGAN_CODE" property="pinganCode" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CUP_AREA_ID, CUP_AREA_NAME, CUP_AREA_PARENT_ID, CREATE_TIME, STARPOS_CODE, PINGAN_CODE
+    </sql>
+
+</mapper>

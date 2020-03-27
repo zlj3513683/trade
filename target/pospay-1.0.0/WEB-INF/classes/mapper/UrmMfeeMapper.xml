@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.UrmMfeeDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.UrmMfee">
+        <result column="MERC_ID" property="mercId" />
+        <result column="STOE_ID" property="stoeId" />
+        <result column="PRD_ID" property="prdId" />
+        <result column="FEE_RAT" property="feeRat" />
+        <result column="FEE_RAT1" property="feeRat1" />
+        <result column="MAX_FEE_AMT" property="maxFeeAmt" />
+        <result column="TM_SMP" property="tmSmp" />
+        <result column="FEE_RAT2" property="feeRat2" />
+        <result column="MSHD0_FEE_RAT" property="mshd0FeeRat" />
+        <result column="SERVICE_FEE" property="serviceFee" />
+        <result column="PAY_DAY_MAX" property="payDayMax" />
+        <result column="PAY_DAY_MIN" property="payDayMin" />
+        <result column="PAY_SIG_MAX" property="paySigMax" />
+        <result column="SERVICE_FEE1" property="serviceFee1" />
+        <result column="FM_FLG" property="fmFlg" />
+        <result column="FM_AMT" property="fmAmt" />
+        <result column="FEE_RAT3" property="feeRat3" />
+        <result column="SPEFEEALI" property="spefeeali" />
+        <result column="SPEFEEALIAMT" property="spefeealiamt" />
+        <result column="SPEFEEALIFLG" property="spefeealiflg" />
+        <result column="SPEFEEWX" property="spefeewx" />
+        <result column="SPEFEEWXAMT" property="spefeewxamt" />
+        <result column="SPEFEEWXFLG" property="spefeewxflg" />
+        <result column="YSFDEBITFEE" property="ysfdebitfee" />
+        <result column="YSFCREDITFEE" property="ysfcreditfee" />
+        <result column="FIX_FEE" property="fixFee" />
+        <result column="LVZH_FEE" property="lvzhFee" />
+        <result column="FEE_UNION_SCAN_BORROW_NORMAL_MAX" property="feeUnionScanBorrowNormalMax" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MERC_ID, STOE_ID, PRD_ID, FEE_RAT, FEE_RAT1, MAX_FEE_AMT, TM_SMP, FEE_RAT2, MSHD0_FEE_RAT, SERVICE_FEE, PAY_DAY_MAX, PAY_DAY_MIN, PAY_SIG_MAX, SERVICE_FEE1, FM_FLG, FM_AMT, FEE_RAT3, SPEFEEALI, SPEFEEALIAMT, SPEFEEALIFLG, SPEFEEWX, SPEFEEWXAMT, SPEFEEWXFLG, YSFDEBITFEE, YSFCREDITFEE, FIX_FEE, LVZH_FEE
+    </sql>
+
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.posppay.newpay.modules.xposp.dao.mapper.UrmComiDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.posppay.newpay.modules.xposp.entity.UrmComi">
+        <result column="MERC_ID" property="mercId" />
+        <result column="USR_NO" property="usrNo" />
+        <result column="PSN_CRP_FLG" property="psnCrpFlg" />
+        <result column="BUY_SAL_FLG" property="buySalFlg" />
+        <result column="USR_STS" property="usrSts" />
+        <result column="SCU_LVL" property="scuLvl" />
+        <result column="KEY_TYP" property="keyTyp" />
+        <result column="SIGN_KEY" property="signKey" />
+        <result column="ECP_KEY" property="ecpKey" />
+        <result column="ECP_ALG" property="ecpAlg" />
+        <result column="USR_DISP_NM" property="usrDispNm" />
+        <result column="CI_NO" property="ciNo" />
+        <result column="MAIN_AC" property="mainAc" />
+        <result column="TM_SMP" property="tmSmp" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MERC_ID, USR_NO, PSN_CRP_FLG, BUY_SAL_FLG, USR_STS, SCU_LVL, KEY_TYP, SIGN_KEY, ECP_KEY, ECP_ALG, USR_DISP_NM, CI_NO, MAIN_AC, TM_SMP
+    </sql>
+
+</mapper>
