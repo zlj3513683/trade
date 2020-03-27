@@ -37,7 +37,7 @@
         <xposp-iso.version>1.0.0</xposp-iso.version>
         <sim-hsm.version>1.0.0</sim-hsm.version>
         <json-lib.version>2.4</json-lib.version>
-        <shiro.version>1.4.0</shiro.version>
+        <shiro.version>1.5.2</shiro.version>
         <jackson.dataformat.xml.version>2.9.6</jackson.dataformat.xml.version>
         <oracle.version>11.2.0.4</oracle.version>
 <!--        <log4j.version>1.2.17</log4j.version>-->
